@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGS Dashboard</title>
+</head>
+<body>
+    <h1>SGS Client Management Dashboard</h1>
+
+    <!-- Job Input Form -->
+    <form action="/submit" method="POST">
+        <input type="hidden" name="taskType" value="jobEntry">
+
+        <label for="SGSnum">SGS Number:</label>
+        <input type="text" id="SGSnum" name="SGSnum" required><br>
+
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required><br>
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required><br>
+
+        <label for="bottleForm">Bottle Form:</label>
+        <input type="text" id="bottleForm" name="bottleForm" required><br>
+
+        <label for="capColor">Cap Color:</label>
+        <input type="text" id="capColor" name="capColor" required><br>
+
+        <label for="ArtNUM">Art Number:</label>
+        <input type="text" id="ArtNUM" name="ArtNUM" required><br>
+
+        <button type="submit">Submit Job</button>
+    </form>
+</body>
+</html>
