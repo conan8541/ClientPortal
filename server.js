@@ -8,7 +8,7 @@ const app = express();
 app.set('view engine', 'ejs'); // Set up EJS
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.static('public'));
 // MongoDB setup
 const client = new MongoClient(process.env.MONGODB_URI);
 let db, clientsCollection;
